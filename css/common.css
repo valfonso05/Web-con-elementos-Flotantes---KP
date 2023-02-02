@@ -1,0 +1,44 @@
+/*Legenda de colores*/
+:root{
+    --primary-color: #7aa78a;
+    --primary-color-dark: #395e48;
+    --secondary-color: #6e3d31;
+    --secondary-color-dark: #4d201b;
+    --gray-color: #ccc;
+    --gray-color-dark: rgb(58, 53, 53);
+    --shadow-color: rgb(51, 1, 1);
+    --color-letras: white;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/bg-pattern.png);
+}
+
+#container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#container-footer{
+    padding: 40px;
+    background-color: rgba(71, 69, 69, 0.7);
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+a:hover{
+    color: var(--primary-color-dark);
+}

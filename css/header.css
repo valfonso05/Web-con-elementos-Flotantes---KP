@@ -1,0 +1,108 @@
+header{
+    float: left;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 20px 0;
+}
+
+header img{
+    width: 50px;
+}
+
+header h1{
+    color: var(--primary-color);
+    font-size: 50px;
+    margin: 0;
+    text-shadow: 2px 2px 5px var(--shadow-color);
+}
+
+.text-secondary{
+    color: var(--secondary-color)
+}
+
+#main-menu{
+    float: left;
+    width: 100%;
+    background-color: var(--primary-color);
+    text-shadow: 2px 2px 5px var(--shadow-color);
+    text-transform: uppercase;
+}
+
+#main-menu > ul > li{
+    float: left;
+    margin: 10px 0;
+}
+
+#main-menu > ul > li > a{
+    color: var(--color-letras);
+    padding: 10px 20px;
+    font-size: 20px;
+    border-right: solid 1px var(--gray-color);
+}
+
+#main-menu > ul > li > a:hover{
+     background-color: var(--primary-color-dark);
+}
+
+#main-menu > ul > li > ul{
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+}
+
+#main-menu > ul > li > ul> li> a{
+    display: block;
+    color: var(--color-letras);
+    padding: 15px;
+    font-size: 18px;
+    background-color: var(--secondary-color);
+    border-top:  solid 1px var(--gray-color) ;
+}
+
+#main-menu > ul > li > ul> li> a:hover{
+    background-color: var(--secondary-color-dark);
+}
+
+#main-menu > ul > li:hover > ul{
+    display: block;
+    box-shadow: 2px 2px 5px var(--shadow-color);
+}
+
+@media (max-width: 768px){
+    #main-menu > ul > li{
+        width: 100%;
+        margin: 0;
+        border-bottom: solid 1px var(--gray-color);
+    }
+    #main-menu > ul > li >a{
+        text-align: center;
+        display: block;
+    }
+
+    #main-menu > ul > li > ul{
+        width: 100%;
+    }
+    #main-menu > ul > li > ul> li{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:414px){
+    #main-menu > ul > li{
+        width: 100%;
+        margin: 0;
+        border-bottom: solid 1px var(--gray-color);
+    }
+    #main-menu > ul > li >a{
+        text-align: center;
+        display: block;
+    }
+
+    #main-menu > ul > li > ul{
+        width: 100%;
+    }
+    #main-menu > ul > li > ul> li{
+        text-align: center;
+    }
+}
